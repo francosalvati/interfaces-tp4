@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>tp4</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/clases.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="layout">
+
+      <header class="flex a-center">
+        <ul>
+          <li class="btn_menu">
+        <div class="borde shadow_blue">
+          <div class="linea top"></div>
+          </div>
+          <div class="borde shadow_blue">
+            <div class="linea mid"></div>
+          </div>
+          <div class="borde shadow_blue">
+            <div class="linea bot"></div>
+          </div>
+        </li>
+        <li class="img">
+          <img src="assets/Logo.png" alt="Logo" />
+        </li>
+        <li>
+          <button class="button shadow_blue">COMPRAR</button>
+        </li>
+      </ul>
+      <div class=""></div>
+    </header>
+    
+    <div class="bg-top absolute top">
+
+    </div>
+
+    <div class="presentacion">
+      <div class="parallax-edificios">
+        <div class="cielo"><img class="w-100" src="assets/Cielo.png" alt=""></div>
+        <div class="edificios">
+          <div class="izquierda absolute left bottom"><img class="w-100 h-100" src="assets/Edificios-izquierda.png" alt=""></div>
+          <div class="medio center-p absolute bottom"><img class="w-100 h-100" src="assets/Edificios-medio.png" alt=""></div>
+          <div class="derecha absolute bottom"><img class="w-100 h-100" src="assets/Edificios-derecha.png" alt=""></div>
+        </div>
+
+        <div class="spidermans">
+          <div class="spiderwoman absolute spider">
+            <img src="assets/Spiderwoman.png" class="w-100 h-100" alt="Spider violeta" data-velocidad="30" />
+          </div>
+
+          <div class="spiderman spider absolute">
+            <div class="img-container">
+              <img src="assets/Spiderman1.png" class="w-100 h-100" alt="Spider rojo" data-velocidad="30" />
+            </div>
+            <div class="telaarania absolute">
+              <img src="assets/TelaArrania.png" class="w-100 h-100" alt=" telaaraña_rojo" class="telaaraña roja" />
+            </div>
+          </div>
+
+          <div class="spiderblack spider absolute">
+            <div class="img-container">
+              <img src="assets/Spiderman.png" class="w-100" alt="Spider negro" data-velocidad="30" />
+            </div>
+            <div class="telarania2 absolute">
+              <img src="assets/TelaArrania2.png" class="w-100 h-100" alt=" telaaraña_negro" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion_conocer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="845" viewBox="0 0 1280 845" fill="none">
+        <path d="M0 715.25L1280 845V0.5L0 80V715.25Z" fill="#8F6AA6" />
+      </svg>
+      <div class="contenedor">
+        <div class="izquierda">
+          <h1 class="h1">Conoce a Spidey y sus sorprendentes amigos</h1>
+          <p class="p">
+            Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider
+            (Gwen Stacey) y Miles Morales para formar el equipo de Spidey, con
+            la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si Spidey se
+            encuentra en una situación difícil donde necesita aún más poder de
+            superhéroe, tengan la seguridad de que un amigo de los Vengadores
+            correrá para ayudar.
+          </p>
+          <img src="./assets/conoce_amigos.png" alt="Conoce a los amigos" />
+        </div>
+        <img src="./assets/duende.png" alt="duende" data-velocidad="5" class="duende" />
+      </div>
+    </div>
+
+    <div class="seccion_amigos">
+      <div class="contenedor">
+        <div class="item">
+          <img src="./assets/amigos_pp.png" alt="Peter Parker saltando" class="peter_parker shadow_blue" />
+          <p class="p">
+            Peter Parker, un joven huérfano neoyorquino que adquiere
+            superpoderes después de ser mordido por una araña radiactiva, y cuya
+            ideología como héroe se ve reflejada primordialmente en la expresión
+            ”un gran poder conlleva una gran responsabilidad”.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./assets/amigos_negro.png" alt="Spidy Negro saltando" class="negro shadow_blue" />
+          <p class="p">
+            Tras la muerte de Peter Parker, es quien toma la identidad de
+            Spider-Man.
+            La elección del presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de
+            etnicidad de Spider-Man.
+          </p>
+        </div>
+        <div class="item">
+          <img src="./assets/amigos_gwen.png" alt="Gwen Stacy saltando" class="gwen shadow_blue" />
+          <p class="p">
+            El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella
+            reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña
+            Radiactiva
+          </p>
+        </div>
+      </div>
+    </div>
+  
+
+
+
+  <div class="bg-container-contact">
+
+    <!-- input -->
+    <div class="seccion-form">
+      <h1>Lo último de SPIDEY Y SUS AMIGOS en tu buzón de correo electrónico</h1>
+      <form id="form-contact">
+        <div class="flex ">
+          <input type="text" value="Ingresa aquí tu correo">
+          <button>SUSCRIBIRSE</button>
+        </div>
+      </form>
+      <p>Al inscribirse en nuestra lista de correo, nos autoriza a ponernos en contacto con usted para
+        enviarle ofertas y actualizaciones de marketing por correo electrónico, y también acepta nuestra <u>Política
+          de
+          privacidad</u> y las <u>Condiciones del servicio</u>.</p>
+      <div class="cartel">
+        <img src="./assets/CartelAPT.png" class=" w-100 ">
+      </div>
+    </div>
+    <!-- input -->
+    <!-- spritesheat -->
+    <div class="spritesheat absolute bottom">
+      <div class="bg">
+        <img src="./assets/Edificios.png" class="h-100" alt="">
+      </div>
+      <div class="spider1 absolute">
+        <img src="./assets/image-227.png" class="h-100">
+      </div>
+      <div class="venom absolute">
+        <img src="./assets/image-228.png" class="h-100">
+      </div>
+      <div class="spider-sprite absolute">
+        <img src="./assets/image-239.png" class="h-100">
+      </div>
+    </div>
+    <!-- spritesheat -->
+  </div>
+
+  <!-- plataformas -->
+  <div class="consolas">
+    <img src="./assets/consolas.png" class="w-100 h-100" alt="">
+  </div>
+  <!-- plataformas -->
+
+  <!-- footer -->
+  <div class="footer">
+    <p class="p p-footer">
+      ©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark Office. SEGA, the SEGA logo and
+      SONIC SUPERSTARS are either registered trademarks or trademarks of SEGA CORPORATION or its affiliates. All other
+      trademarks, logos and copyrights are property of their respective owners.©2023 The LEGO Group. LEGO, the LEGO
+      logo, the Minifigure, and the Brick and Knob configurations are trademarks and/or copyrights of the LEGO Group.
+      All other marks and trademarks are the property of their respective owners. All rights reserved."PS", "PS5" and
+      "PS4" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.Microsoft, the Xbox Sphere
+      mark, the Series X logo, Xbox One, and Xbox Series X are trademarks of the Microsoft group of companies.Nintendo
+      Switch is a trademark of NintendoEPIC GAMES and the EPIC STORE LOGO are trademarks or registered trademarks of
+      EPIC GAMES INC.©2023 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of
+      Valve Corporation in the U.S. and/or other countries.The ESRB rating icons are registered trademarks of the
+      Entertainment Software Association.
+      <br> <br>
+      <u>COOKIE POLICY</u> <u>PRIVACY POLICY</u>
+    </p>
+    <img class="redes" src="./assets/redes.png">
+  </div>
+
+  <!-- layout -->
+</div>
+  <script src="js/javascript.js"></script>
+</body>

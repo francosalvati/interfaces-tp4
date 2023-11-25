@@ -1,0 +1,380 @@
+
+.shadow_blue {
+  box-shadow: 4px 5px 0px 0 var(--color-primario-S);
+}
+
+.shadow_grey {
+  box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.layout {
+  width: 1280px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+/* header */
+
+header {
+  position: absolute;
+  width: 1280px;
+  top: 0;
+  height: 103px;
+  z-index: 150;
+  background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
+}
+
+header ul {
+  position: relative;
+  top: -8px;
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px auto;
+  position: relative;
+}
+
+
+header .button {
+  border: 8px solid var(--color-Primario);
+  background: var(--color-Secundario);
+  border-radius: 111px;
+  width: 212px;
+  cursor: pointer;
+  height: 62px;
+  font-size: 20px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--color-primario-S);
+  color: var(--color-primario-S);
+  font-size: 19px;
+  font-family: var(--fuente);
+}
+
+.btn_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.btn_menu .borde {
+  width: 46px;
+  height: 12px;
+  background-color: var(--color-Primario);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_menu div.linea {
+  width: 38px;
+  height: 5px;
+  background-color: var(--color-Secundario);
+  border-radius: 8px;
+}
+
+header .img {
+  width: 590px;
+  position: absolute;
+  top: 60px;
+  left: calc(227px);
+  transition: .5s ease-in;
+  z-index: 150;
+}
+
+header img {
+  position: relative;
+  width: 100%;
+}
+
+
+header button {
+  width: 200px;
+  height: 50px;
+}
+
+header.scrolleando .img {
+  width: 133px;
+  top: 0px;
+  left: calc(574px - 100px);
+  transition: .5s ease-in;
+}
+
+header.scrolleando {
+  position: sticky;
+}
+/* header */
+
+
+/* Edificios Paralax */
+.presentacion {
+  position: relative;
+  top: -3px;
+  margin-top: 103px;
+  width: 1280px;
+}
+
+.parallax-edificios {
+  position: relative;
+  top: -103px;
+  z-index: 20;
+  height: calc(846px - 50px);
+}
+
+
+.cielo {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  object-fit: cover;
+}
+
+
+.edificios{
+  position: absolute;
+  width: 100%;
+  height: 720px;
+}
+
+.edificios .izquierda {
+  left: -60px;
+  width: 452px;
+  height: 720px;
+}
+
+.edificios .medio{
+  width: 543.5px;
+  height: 213.5px;
+}
+
+.edificios .derecha{
+  width: 374px;
+  height: 727.5px;
+  right: -5px;
+}
+
+/* hombres aranias */
+
+.spidermans {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: auto;
+  width: 1280px;
+  height: 200px;
+  z-index: 1000;
+}
+
+.spiderwoman {
+  left: 90px;
+  top: 262px;
+  width: 360px;
+}
+
+.spiderman {
+  left: 403px;
+  top: 277px;
+  width: 465px;
+}
+
+
+.spiderblack{
+  left: 695px;
+  top: 209px
+}
+.spiderblack .img-container{
+  width: 393px;
+}
+
+.telaarania {
+  top: 10px;
+  left: -450px;
+  transform: rotate(65.4deg);
+  width: 450.82px;
+}
+
+.telarania2 {
+  left: 290px;
+  top: 55px;
+  width: 445px;
+  height: 388px;
+}
+
+
+
+/* input */
+.bg-container-contact {
+  position: relative;
+  height: 1280px;
+  background: linear-gradient(to top, #F7E3D8 21.2%, #8FBEFC 81.48%);
+  display: flex;
+  justify-content: center;
+  padding-top: 152px;
+}
+
+.bg-container-contact h1 {
+  display: block;
+  color: #000;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 94.5%;
+  width: 816px;
+}
+
+.seccion-form p {
+  width: 578px;
+  height: 95px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 94.5%;
+  margin-left: 52px;
+}
+
+form {
+  margin-bottom: 39px;
+  margin-top: 46px;
+}
+
+form input {
+  width: 562px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 50px 0px 0px 50px;
+  border-top: 9px solid var(--color-Primario);
+  border-bottom: 9px solid var(--color-Primario);
+  border-left: 9px solid var(--color-Primario);
+  background: #fff;
+  box-shadow: 4px 5px 0px 0px var(--color-primario-S);
+  color: rgba(0, 0, 0, 0.39);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 94.5%;
+  padding: 41px 51px;
+  letter-spacing: 2.2px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+
+form button {
+  width: 218px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 0px 50px 50px 0px;
+  border: 9px solid var(--color-Primario);
+  background: #ffe901;
+  box-shadow: 4px 5px 0px 0px var(--color-primario-S);
+  color: var(--color-primario-S);
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 94.5%;
+  letter-spacing: 2.2px;
+  -webkit-text-stroke: 2.5px var(--color-primario-S);
+}
+
+.cartel {
+  width: 231px;
+  margin-left: 52px;
+  margin-top: 17px;
+}
+
+/* input */
+
+/* spritesheat */
+
+.spritesheat {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1280px;
+  height: 720px;
+  margin: auto;
+}
+
+.spritesheat .bg{
+  width: 100%;
+  height: 720px;
+}
+
+.spider1 {
+  width: 94px;
+  height: 88px;
+  top: 393px;
+  left: 998px;
+}
+
+.spider-sprite{
+  width: 58px;
+  height: 64px;
+  top: 496px;
+  left: 533px;
+}
+
+.venom {
+  width: 97px;
+  height: 89px;
+  top: 560px;
+  left: 219px;
+}
+
+/* spritesheat */
+
+/* consolas */
+
+.consolas {
+  width: 100%;
+  height: 80px;
+  background: #242424;
+  overflow: hidden;
+}
+
+
+/* footer */
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 598px;
+  flex-shrink: 0;
+  padding: 0 100px;
+  background-color: #5e5e5d;
+}
+
+.footer p {
+  width: 820px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 94.5%;
+  margin: 38px 0;
+  letter-spacing: 2.2px;
+}
+
+.redes {
+  width: 212px;
+  height: 41px;
+  flex-shrink: 0;
+  position: relative;
+}
