@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 :root {
     --color-blanco: #fff;
     --color-negro: #000;
@@ -93,6 +94,18 @@
     transform: translateX(-50%);
 }
 
-.h-100{
+.h-100 {
     height: 100%
+}
+
+input:focus {
+    outline: none;
+}
+
+.elevacion-2 {
+    box-shadow: 4px 5px 0px 0 var(--color-primario-S);
+}
+
+.elevacion-1 {
+    box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
 }

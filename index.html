@@ -7,24 +7,23 @@
   <title>SPIDEY - The Game</title>
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/clases.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap"
-    rel="stylesheet">
 </head>
 
 <body>
   <div class="layout">
 
+    <!-- header -->
+
     <header class="flex a-center">
       <ul>
         <li class="btn_menu">
-          <div class="borde shadow_blue">
+          <div class="borde elevacion-2">
             <div class="linea top"></div>
           </div>
-          <div class="borde shadow_blue">
+          <div class="borde elevacion-2">
             <div class="linea mid"></div>
           </div>
-          <div class="borde shadow_blue">
+          <div class="borde elevacion-2">
             <div class="linea bot"></div>
           </div>
         </li>
@@ -32,15 +31,17 @@
           <img src="assets/Logo.png" alt="Logo" />
         </li>
         <li>
-          <button class="button shadow_blue">COMPRAR</button>
+          <button class="button elevacion-2">COMPRAR</button>
         </li>
       </ul>
       <div class=""></div>
     </header>
 
     <div class="bg-top absolute top">
-
     </div>
+    <!-- header -->
+
+    <!-- spidermans paralax -->
 
     <div class="presentacion">
       <div class="parallax-edificios">
@@ -79,11 +80,14 @@
       </div>
     </div>
 
+    <!-- spidermans paralax -->
+    
+    <!-- conocer duende verde -->
     <div class="seccion_conocer">
       <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="845" viewBox="0 0 1280 845" fill="none">
         <path d="M0 715.25L1280 845V0.5L0 80V715.25Z" fill="#8F6AA6" />
       </svg>
-      <div class="contenedor">
+      <div class="conocer_container">
         <div class="izquierda">
           <h1 class="h1">Conoce a Spidey y sus sorprendentes amigos</h1>
           <p class="p">
@@ -94,46 +98,161 @@
             superhéroe, tengan la seguridad de que un amigo de los Vengadores
             correrá para ayudar.
           </p>
-          <img src="./assets/conoce_amigos.png" alt="Conoce a los amigos" />
+          <div class="conocer_img">
+            <img src="./assets/juego6.png" class="w-100" alt="Conoce a los amigos" />
+          </div>
         </div>
-        <img src="./assets/DuendeVerde.png" alt="duende" data-velocidad="5" class="duende" />
-      </div>
-    </div>
-
-    <div class="seccion_amigos">
-      <div class="contenedor">
-        <div class="item">
-          <img src="./assets/amigos_pp.png" alt="Peter Parker saltando" class="peter_parker shadow_blue" />
-          <p class="p">
-            Peter Parker, un joven huérfano neoyorquino que adquiere
-            superpoderes después de ser mordido por una araña radiactiva, y cuya
-            ideología como héroe se ve reflejada primordialmente en la expresión
-            ”un gran poder conlleva una gran responsabilidad”.
-          </p>
-        </div>
-        <div class="item">
-          <img src="./assets/amigos_negro.png" alt="Spidy Negro saltando" class="negro shadow_blue" />
-          <p class="p">
-            Tras la muerte de Peter Parker, es quien toma la identidad de
-            Spider-Man.
-            La elección del presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de
-            etnicidad de Spider-Man.
-          </p>
-        </div>
-        <div class="item">
-          <img src="./assets/amigos_gwen.png" alt="Gwen Stacy saltando" class="gwen shadow_blue" />
-          <p class="p">
-            El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella
-            reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña
-            Radiactiva
-          </p>
+        <div class="duende_container">
+          <img src="./assets/DuendeVerde.png" alt="duende" data-velocidad="5" class="w-100 h-100" />
         </div>
       </div>
     </div>
+    <!-- conocer duende verde -->
+    <!-- conocer amigos -->
+    <ul class="seccion_amigos">
+
+      <li class="item">
+        <img src="./assets/amigos1.png" alt="Peter Parker saltando" />
+        <p class="p">
+          Peter Parker, un joven huérfano neoyorquino que adquiere
+          superpoderes después de ser mordido por una araña radiactiva, y cuya
+          ideología como héroe se ve reflejada primordialmente en la expresión
+          ”un gran poder conlleva una gran responsabilidad”.
+        </p>
+      </li>
+
+      <li class="item">
+        <img src="./assets/amigos2.png" alt="Spidy Negro saltando" />
+        <p class="p">
+          Tras la muerte de Peter Parker, es quien toma la identidad de
+          Spider-Man.
+          La elección del presidente Barack Obama en enero de 2009, fue una fuente de inspiración para el cambio de
+          etnicidad de Spider-Man.
+        </p>
+      </li>
+
+      <li class="item">
+        <img src="./assets/amigos3.png" alt="Gwen Stacy saltando"  />
+        <p class="p">
+          El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella
+          reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña
+          Radiactiva
+        </p>
+      </li>
+    </ul>
+ <!-- conocer amigos -->
+
+<!-- ghostspider -->
+
+  <ul class="ghostspider">
+    <li class="juego1 absolute">
+      <div> 
+        <img src="./assets/pantallaJuego.png" class="w-100 h-100" alt="">
+      </div>
+    </li>
+    <li class="juego2 absolute">
+      <div> <img src="./assets/pantallajuego2.png" class="w-100 h-100" alt=""></div>
+    </li>
+    <li class="juego3 absolute">
+      <div> <img src="./assets/pantallaJuego3.png" class="w-100 h-100" alt=""></div>
+    </li>
+    
+  </ul>
+  
+  <!-- ghostspider -->
+  
+  
+  <!-- los vengadores -->
+  
+  <div class="vengadores_container">
+    <div class="bg">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="986" viewBox="0 0 1280 986" fill="none">
+        <path d="M0 91L1282 0V986L0 863V91Z" fill="black"/>
+      </svg>
+    </div>
+    <h1 class="h1"> Los vengadores acompañando tu aventura  </h1>
+    <div class="vengadores_parallax ">
+
+      <div class="paralax-bg">
+        <div class="absolute">
+          <img src="./assets/fondoNubes.png" class="w-100 h-100"  alt="">
+        </div>
+        <div class="absolute">
+          <img src="./assets/plantas2.png" class="w-100 h-100" alt="">
+        </div>
+        <div class="absolute plantas"> 
+          <img src="./assets/plantas.png" class="w-100 h-100" alt="">
+        </div>
+      </div>
+
+      <div class="personajes_paralax">
+        <div class="elastic absolute">
+          <img src="./assets/elasticgirl.png"  class="w-100 h-100" alt="">
+        </div>
+        <div class="pantera absolute">
+          <img src="./assets/Pantera.png" class="w-100 h-100" alt="">
+        </div>
+        <div class="hulk absolute">
+          <img src="./assets/Hulk.png" class="w-100 h-100" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+<!-- los vengadores -->
+
+<!-- gran poder -->
+
+  <div class="poder_container">
+    <div class="bg absolute">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="477" viewBox="0 0 1280 477" fill="none">
+        <path d="M0 0L1280 96V344L0 476.454V0Z" fill="black"/>
+        </svg>
+    </div>
+
+
+    <div class="poder_body">
+      <h1 class="h1">”un gran poder conlleva una gran responsabilidad”</h1>
+        <button class="button elevacion-2">COMPRAR AHORA</button>
+      
+    </div>
+  </div>
+
+<!-- gran poder -->
+
+
+<!-- personajes caracteres -->
+
+<ul class="pj_caracter">
+  <div class="bg">
+    <div class="barra absolute top"></div>
+    <div class="barra absolute bottom"></div>
+  </div>
+  <li>
+    <div class="spiderwoman absolute">
+      <img src="./assets/spiderw-pj.png" alt="">
+    </div>
+  </li>
+  
+  <li>
+    <div class="spiderman absolute">
+      <img src="./assets/spiderman-pj.png" alt="">
+    </div>
+  </li>
+  
+  <li>
+    <div class="spiderblack absolute">
+      <img src="./assets/spiderblack-pj.png" alt="">
+    </div>
+  </li>
+</ul>
+
+<!-- personajes caracteres -->
 
 
 
-
+<!-- contact -->
     <div class="bg-container-contact">
 
       <!-- input -->
@@ -141,7 +260,7 @@
         <h1>Lo último de SPIDEY Y SUS AMIGOS en tu buzón de correo electrónico</h1>
         <form id="form-contact">
           <div class="flex ">
-            <input type="text" value="Ingresa aquí tu correo">
+            <input type="text" placeholder="Ingresa aquí tu correo">
             <button>SUSCRIBIRSE</button>
           </div>
         </form>
@@ -199,6 +318,6 @@
     </div>
 
     <!-- layout -->
-  </div>
+  </di>
   <script src="js/javascript.js"></script>
 </body>

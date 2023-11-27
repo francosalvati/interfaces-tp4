@@ -1,14 +1,3 @@
-.shadow_blue {
-  box-shadow: 4px 5px 0px 0 var(--color-primario-S);
-}
-
-.shadow_grey {
-  box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
-}
-
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +22,7 @@ header {
   width: 1280px;
   top: 0;
   height: 103px;
-  z-index: 100;
+  z-index: 10000;
   background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
 }
 
@@ -224,23 +213,283 @@ header.scrolleando {
   height: 388px;
 }
 
+/* parallax spiderman */
+
+/* conocer duende verde */
+
 .seccion_conocer {
-  position: absolute;
-  top: 740px;
+  top: -150px;
+  position: relative;
   z-index: 9;
+  color: #fff;
 }
 
-.duende {
+.conocer_container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: calc(100% - 100px);
+  margin-left: 100px;
+}
+
+.conocer_container .h1 {
+  margin-top: 219.5px;
+  width: 646px;
+}
+
+.conocer_container .p {
+  height: 154px;
+  width: 586px;
+  margin-top: 22px;
+}
+
+.conocer_img {
+  margin-top: 14px;
+  height: 413.131px;
+  transform: rotate(-2.222deg);
+  width: 751px;
+  border-radius: 26px;
+  border: 9px solid #FFF;
+  box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.duende_container {
+  position: absolute;
   width: 550px;
   height: 920px;
-  position: absolute;
   z-index: 10;
-  top: 140px;
-  right: 700px;
+  top: 132.5px;
+  right: 15px;
   transform: rotateY(180deg);
 }
 
+
+/* conocer duende */
+
+/* amigos */
+
+.seccion_amigos {
+  display: flex;
+  width: 1080px;
+  margin: calc(90.28px + 100px) auto 113px;
+  justify-content: space-between;
+  align-items: baseline;
+  transition: .500ms;
+  /* opacity: 0; */
+}
+
+.seccion_amigos li p {
+  margin-top: 23.31px;
+  width: 333px;
+  height: 218px;
+}
+
+
+.seccion_amigos_show {
+  transform: translateY(-50px);
+  opacity: 100%;
+}
+
+/* amigos */
+
+/* ghostSpider */
+.ghostspider {
+  position: relative;
+  background-image: url(../assets/ghostSpider.png);
+  width: 100%;
+  height: 566px;
+}
+
+.ghostspider {
+  position: relative;
+  z-index: 150;
+}
+
+.ghostspider .juego1 {
+  width: 546.108px;
+  height: 326.509px;
+  top: -109.45px;
+  left: 77.81px;
+  transform: rotate(-13.078deg);
+}
+
+.ghostspider .juego2 {
+  width: 543.218px;
+  height: 325.787px;
+  top: 84.03px;
+  left: 79.01px;
+  transform: rotate(-26.474deg);
+}
+
+.ghostspider .juego3 {
+  width: 546.108px;
+  height: 326.509px;
+  top: 298.38px;
+  left: 101px;
+  transform: rotate(-36.016deg);
+}
+
+.vengadores_parallax {
+  position: relative;
+  margin: auto;
+  width: 1077.059px;
+  height: 527.626px;
+}
+
+/* ghostSpider */
+
+
+/* vengadores */
+
+.vengadores_container {
+  width: 1280px;
+  height: 986px;
+  position: relative;
+  top: -92px;
+  color: #FFF;
+}
+
+.vengadores_container .bg {
+  position: absolute;
+}
+
+.vengadores_container .h1 {
+  position: absolute;
+  margin: calc(163px + 92px) 104px 51px;
+  font-weight: 500;
+  width: 667px;
+  z-index: 100;
+}
+
+.vengadores_parallax {
+  position: absolute;
+  top: calc(389px + 91px);
+  box-shadow: 26px 29px 41px 14px rgba(0, 0, 0, 0.15);
+  left: 101px;
+}
+
+.vengadores_parallax .plantas {
+  z-index: 200;
+}
+
+.personajes_paralax .elastic {
+  width: 451.258px;
+  height: 591.442px;
+  top: -53px;
+  left: 84.4px;
+  transform: rotate(-12.483deg);
+
+}
+
+.personajes_paralax .pantera {
+  width: 368.308px;
+  height: 552.462px;
+  top: -219px;
+  left: 510px;
+  transform: rotate(13.615deg);
+  object-fit: cover;
+}
+
+.hulk {
+  width: 410.106px;
+  height: 437.972px;
+  top: 0130.18px;
+  left: 697.12px;
+  transform: rotate(7.515deg);
+  flex-shrink: 0;
+}
+
+/* vengadores */
+
+
+/* gran poder */
+
+.poder_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 248px;
+  color: #fff;
+  margin-bottom: -20px;
+}
+
+
+.poder_body .h1 {
+  position: relative;
+  width: 816px;
+  margin: 15px 104px 42px;
+  font-weight: 400;
+  color: #FFF;
+font-size: 60px;
+font-weight: 400;
+}
+
+
+.poder_body button {
+  padding: 15px 44px;
+  position: relative;
+  border-radius: 111px;
+  border: 8px solid var(--2982-ff, #2982FF);
+  background: #FFE901;
+  color: #02187E;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 94.5%; /* 18.9px */
+  -webkit-text-stroke: 1px var(--color-primario-S);
+  margin-left: 104px ;
+}
+
+/* gran poder */
+
+/* pj caracteres */
+
+.pj_caracter{
+  position: relative;
+  height: 720px;
+  margin-bottom: 123px;
+}
+
+.pj_caracter .bg{
+  position: absolute;
+  width: 1280px;
+  height: 841.639px;
+  background: #5e5e5d;
+  opacity: 0.1;
+  transform: skew( -20deg);
+  transform-origin: 0% 100%
+}
+.pj_caracter .bg .barra{
+  height: 43px;
+  width: 100%;
+  background-color: red;
+}
+
+.pj_caracter .spiderwoman{
+  top: 171px;
+  left: 190px;
+  width: 268px;
+height: 416.5px;
+}
+.pj_caracter .spiderman{
+  top: 180px;
+  left: 394px;
+  width: 416.5px;
+  height: 457.5px;
+}
+.pj_caracter .spiderblack{
+  top: 180px;
+  left: 777px;
+  width: 313.5px;
+  height: 398.5px;
+}
+
+
+/* pj caracteres */
+
 /* input */
+
+
 .bg-container-contact {
   position: relative;
   height: 1280px;
@@ -274,6 +523,10 @@ form {
   margin-top: 46px;
 }
 
+form input::placeholder {
+  color: rgba(0, 0, 0, 0.253);
+}
+
 form input {
   width: 562px;
   height: 100px;
@@ -284,7 +537,6 @@ form input {
   border-left: 9px solid var(--color-Primario);
   background: #fff;
   box-shadow: 4px 5px 0px 0px var(--color-primario-S);
-  color: rgba(0, 0, 0, 0.39);
   font-size: 20px;
   font-weight: 400;
   line-height: 94.5%;
@@ -292,9 +544,7 @@ form input {
   letter-spacing: 2.2px;
 }
 
-form input:focus {
-  outline: none;
-}
+
 
 
 form button {
