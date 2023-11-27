@@ -33,7 +33,7 @@ header {
   width: 1280px;
   top: 0;
   height: 103px;
-  z-index: 150;
+  z-index: 100;
   background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
 }
 
@@ -94,7 +94,7 @@ header .img {
   top: 60px;
   left: calc(227px);
   transition: .5s ease-in;
-  z-index: 150;
+  z-index: 5;
 }
 
 header img {
@@ -132,7 +132,6 @@ header.scrolleando {
 .parallax-edificios {
   position: relative;
   top: -103px;
-  z-index: 20;
   height: calc(846px - 50px);
 }
 
@@ -155,6 +154,7 @@ header.scrolleando {
   left: -60px;
   width: 452px;
   height: 720px;
+  top: 20px
 }
 
 .edificios .medio {
@@ -166,6 +166,7 @@ header.scrolleando {
   width: 374px;
   height: 727.5px;
   right: -5px;
+  top: 20px
 }
 
 .showEdificios {
@@ -184,7 +185,7 @@ header.scrolleando {
   margin: auto;
   width: 1280px;
   height: 200px;
-  z-index: 1000;
+  z-index: 12;
 }
 
 .spiderwoman {
@@ -223,7 +224,21 @@ header.scrolleando {
   height: 388px;
 }
 
+.seccion_conocer {
+  position: absolute;
+  top: 740px;
+  z-index: 9;
+}
 
+.duende {
+  width: 550px;
+  height: 920px;
+  position: absolute;
+  z-index: 10;
+  top: 140px;
+  right: 700px;
+  transform: rotateY(180deg);
+}
 
 /* input */
 .bg-container-contact {
