@@ -1,0 +1,31 @@
+
+@keyframes stickyOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-30px) scale(.99);
+    }
+}
+
+@keyframes stickyIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px) scale(.99);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animationStickyOut {
+    opacity: 0;
+    animation: stickyOut 0.3s ease-out;
+}
+
+.animationStickyIn {
+    animation: stickyIn 0.3s ease-in;
+}

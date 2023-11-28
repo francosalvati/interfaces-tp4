@@ -253,6 +253,9 @@ header.scrolleando {
   box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
+.conocer_img img{
+  object-fit: cover;
+}
 
 .duende_container {
   position: absolute;
@@ -402,6 +405,38 @@ header.scrolleando {
 
 /* vengadores */
 
+/* mas diversion */
+  .diversion_container{
+    position: relative;
+    margin: auto;
+    width: 1080px;
+    margin-bottom: 200px;
+  }
+
+  .diversion_container h1{
+    margin-bottom: 69px;
+  }
+
+  .diversion_container .flex {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .diversion_container .img_container{
+    position: sticky;
+    top: 169px;
+    width: 552px;
+    height: 302.762px;
+  }
+
+  .diversion_container .text_container{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    width: 467px;
+  }
+
+/* mas diversion */
 
 /* gran poder */
 
@@ -456,7 +491,6 @@ font-weight: 400;
   height: 841.639px;
   background: #5e5e5d;
   opacity: 0.1;
-  transform: skew( -20deg);
   transform-origin: 0% 100%
 }
 .pj_caracter .bg .barra{
