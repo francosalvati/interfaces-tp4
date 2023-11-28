@@ -7,7 +7,7 @@ form.addEventListener("submit", (e) => {
 })
 
 
-// CONSIGNA 3
+// CONSIGNA 3 Menu 
 let menu = document.getElementById("menu_hamb");
 function toggleMenu(element) {
     element.classList.toggle("clicked");
@@ -20,7 +20,8 @@ function toggleMenu(element) {
 }
 
 
-// CONSIGNA 4
+// CONSIGNA 4  STICKY 
+
 let sticky = document.querySelector("#img_sticky");
 let img;
 
@@ -39,20 +40,21 @@ const scrollHandler = () => {
 
     // Utiliza requestAnimationFrame para optimizar el rendimiento
     requestAnimationFrame(() => {
+        console.log(scroll)
         // Determina qué imagen mostrar según el desplazamiento
-        if (scroll < 4500 && img != 0) {
+        if (scroll < 4350 && img != 0) {
             img = 0;
             updateImage(img);
             stickyAnimation();
-        } else if (scroll >= 4500 && scroll <= 4900 && img != 1) {
+        } else if (scroll >= 4350 && scroll <= 4900 && img != 1) {
             img = 1;
             updateImage(img);
             stickyAnimation();
-        } else if (scroll > 4900 && scroll <= 5400 && img != 2) {
+        } else if (scroll > 4900 && scroll <= 5250 && img != 2) {
             img = 2;
             updateImage(img);
             stickyAnimation();
-        } else if (scroll > 5400 && img != 3) {
+        } else if (scroll > 5250 && img != 3) {
             img = 3;
             updateImage(img);
             stickyAnimation();
@@ -84,7 +86,7 @@ let stickyAnimation = () => {
 };
 
 
-// CONSIGNA 5
+// CONSIGNA 5 
 let header = document.querySelector("header");
 window.addEventListener("scroll", () => {
     if (window.scrollY > 0) {
@@ -95,7 +97,7 @@ window.addEventListener("scroll", () => {
 })
 
 
-// CONSIGNA 6
+// CONSIGNA 6  duende paralax
 // Función para actualizar la posición del duende verde en función del desplazamiento
 function updateDuendeParallax() {
     // Obtén el valor de desplazamiento vertical
@@ -117,7 +119,7 @@ window.addEventListener('scroll', updateDuendeParallax);
 updateDuendeParallax();
 
 
-// CONSIGNA 7
+// CONSIGNA 7  paralax inicio
 // Función para actualizar la posición de los elementos en función del desplazamiento
 function updateParallax() {
     // Obtén el valor de desplazamiento vertical
@@ -144,7 +146,7 @@ window.addEventListener('scroll', updateParallax);
 updateParallax();
 
 
-// CONSIGNA 8
+// CONSIGNA 8 paralax vengadores
 const parallaxContainer = document.getElementById('parallaxContainer');
 const parallaxBg = document.getElementById('parallaxBg');
 const personajesParallax = document.getElementById('personajesParallax');
@@ -158,26 +160,26 @@ parallaxContainer.addEventListener('mousemove', (e) => {
 });
 
 
-// CONSIGNA 9
+// CONSIGNA 9 seccion amigos
 document.addEventListener("DOMContentLoaded", function () {
     const seccionAmigos = document.querySelector(".seccion_amigos");
 
     function checkVisibility() {
         const rect = seccionAmigos.getBoundingClientRect();
-        const isVisible =
-            rect.top <= window.innerHeight && rect.bottom >= 0;
+        const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
 
         if (isVisible) {
             seccionAmigos.classList.add("in-viewport");
+        }else{
+            seccionAmigos.classList.remove("in-viewport");
         }
     }
-
     window.addEventListener("scroll", checkVisibility);
-    checkVisibility();
 });
 
 
-// CONSIGNA 11
+// CONSIGNA 11  Ghostrider
+
 window.addEventListener('scroll', function () {
     const offset = window.scrollY;
     const cards = document.querySelectorAll('.card');
@@ -222,7 +224,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-// CONSIGNA 12
+// CONSIGNA 12  Hover spiders
 const imagess = document.querySelectorAll('.tres-spider');
 const fondo3spiders = document.getElementById('fondo-tres-spiders');
 imagess.forEach((image) => {
@@ -264,3 +266,14 @@ imagess.forEach((image) => {
         });
     });
 });
+
+// loader 
+
+    let loader = document.querySelector('.loader_container')
+    let layout = document.querySelector('.layout')
+    layout.style.display = "none"
+    setTimeout(() => {
+        layout.style.display = "block"
+        loader.style.display = "none"
+    }, 5000);
+
