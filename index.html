@@ -17,64 +17,66 @@
 
     <header class="flex a-center">
       <ul>
-        <li class="btn_menu">
-          <div class="borde elevacion-2">
-            <div class="linea top"></div>
-          </div>
-          <div class="borde elevacion-2">
-            <div class="linea mid"></div>
-          </div>
-          <div class="borde elevacion-2">
-            <div class="linea bot"></div>
-          </div>
-        </li>
-        <li class="img">
+        <div class="btn_menu" onclick="toggleMenu(this)">
+          <div class="linea"></div>
+          <div class="linea"></div>
+          <div class="linea"></div>
+        </div>
+        <div class="img">
           <img src="assets/Logo.png" alt="Logo" />
-        </li>
-        <li>
+        </div>
+        <div>
           <button class="button elevacion-2">COMPRAR</button>
-        </li>
+        </div>
       </ul>
       <div class=""></div>
     </header>
 
     <div class="bg-top absolute top">
     </div>
+
+    <nav>
+      <div class="btn_menu" id="menu_hamb">
+        <a href="#" class="items">Inicio</a>
+        <a href="#" class="items">Heroes</a>
+        <a href="#" class="items">Villanos</a>
+        <a href="#" class="items">COMPRAR</a>
+      </div>
+    </nav>
+
     <!-- header -->
 
     <!-- spidermans paralax -->
 
     <div class="presentacion">
       <div class="parallax-edificios">
-        <div class="cielo"><img class="w-100" src="assets/Cielo.png" alt=""></div>
+        <div class="cielo"><img class="w-100 cielo" src="assets/Cielo.png" data-speed="3.5"></div>
         <div class="edificios">
-          <div class="izquierda absolute left bottom"><img class="w-100 h-100" src="assets/Edificios-izquierda.png"
-              alt=""></div>
-          <div class="medio center-p absolute bottom"><img class="w-100 h-100" src="assets/Edificios-medio.png" alt="">
-          </div>
-          <div class="derecha absolute bottom"><img class="w-100 h-100" src="assets/Edificios-derecha.png" alt=""></div>
+          <img class="w-100 h-100 izquierda absolute left bottom" src="assets/Edificios-izquierda.png" data-speed="3.2">
+          <img class="w-100 h-100 medio center-p absolute bottom" src="assets/Edificios-medio.png" data-speed="3.2">
+          <img class="w-100 h-100 derecha absolute bottom" src="assets/Edificios-derecha.png" data-speed="3.2">
         </div>
 
         <div class="spidermans">
           <div class="spiderwoman absolute spider">
-            <img src="assets/Spiderwoman.png" class="w-100 h-100" alt="Spider violeta" data-velocidad="30" />
+            <img src="assets/Spiderwoman.png" class="w-100 h-100" alt="Spider violeta" data-speed="2" />
           </div>
-
           <div class="spiderman spider absolute">
             <div class="img-container">
-              <img src="assets/Spiderman1.png" class="w-100 h-100" alt="Spider rojo" data-velocidad="30" />
+              <img src="assets/Spiderman1.png" class="w-100 h-100" alt="Spider rojo" data-speed="2" />
             </div>
             <div class="telaarania absolute">
-              <img src="assets/TelaArrania.png" class="w-100 h-100" alt=" telaaraña_rojo" class="telaaraña roja" />
+              <img src="assets/TelaArrania.png" class="w-100 h-100" alt=" telaaraña_rojo" class="telaraña roja"
+                data-speed="2" />
             </div>
           </div>
-
           <div class="spiderblack spider absolute">
             <div class="img-container">
-              <img src="assets/Spiderman.png" class="w-100" alt="Spider negro" data-velocidad="30" />
+              <img src="assets/Spiderman.png" class="w-100" alt="Spider negro" data-speed="2" />
             </div>
             <div class="telarania2 absolute">
-              <img src="assets/TelaArrania2.png" class="w-100 h-100" alt=" telaaraña_negro" />
+              <img src="assets/TelaArrania2.png" class="w-100 h-100" alt=" telaraña_negro" class="telaraña negra"
+                data-speed="2" />
             </div>
           </div>
         </div>
@@ -82,8 +84,10 @@
     </div>
 
     <!-- spidermans paralax -->
-    
+
+
     <!-- conocer duende verde -->
+
     <div class="seccion_conocer">
       <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="845" viewBox="0 0 1280 845" fill="none">
         <path d="M0 715.25L1280 845V0.5L0 80V715.25Z" fill="#8F6AA6" />
@@ -108,8 +112,12 @@
         </div>
       </div>
     </div>
+
     <!-- conocer duende verde -->
+
+
     <!-- conocer amigos -->
+
     <ul class="seccion_amigos">
 
       <li class="item">
@@ -133,7 +141,7 @@
       </li>
 
       <li class="item">
-        <img src="./assets/amigos3.png" alt="Gwen Stacy saltando"  />
+        <img src="./assets/amigos3.png" alt="Gwen Stacy saltando" />
         <p class="p">
           El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen Stacy. Ella
           reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue mordida por la Araña
@@ -141,170 +149,174 @@
         </p>
       </li>
     </ul>
- <!-- conocer amigos -->
 
-<!-- ghostspider -->
+    <!-- conocer amigos -->
 
-  <ul class="ghostspider">
-    <li class="juego1 absolute">
-      <div> 
-        <img src="./assets/pantallaJuego.png" class="w-100 h-100" alt="">
+    <!-- ghostspider -->
+
+    <ul class="ghostspider" id="ghostspider">
+      <li class="juego1 absolute">
+        <div class="card" id="card1">
+          <img src="./assets/pantallaJuego.png" class="w-100 h-100" alt="">
+        </div>
+      </li>
+      <li class="juego2 absolute">
+        <div class="card" id="card2">
+          <img src="./assets/pantallajuego2.png" class="w-100 h-100" alt="">
+        </div>
+      </li>
+      <li class="juego3 absolute">
+        <div class="card" id="card3">
+          <img src="./assets/pantallaJuego3.png" class="w-100 h-100" alt="">
+        </div>
+      </li>
+    </ul>
+
+    <!-- ghostspider -->
+
+
+    <!-- los vengadores -->
+
+    <div class="vengadores_container" id="parallaxContainer">
+
+      <div class="bg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="986" viewBox="0 0 1280 986" fill="none">
+          <path d="M0 91L1282 0V986L0 863V91Z" fill="black" />
+        </svg>
       </div>
-    </li>
-    <li class="juego2 absolute">
-      <div> <img src="./assets/pantallajuego2.png" class="w-100 h-100" alt=""></div>
-    </li>
-    <li class="juego3 absolute">
-      <div> <img src="./assets/pantallaJuego3.png" class="w-100 h-100" alt=""></div>
-    </li>
-    
-  </ul>
-  
-  <!-- ghostspider -->
-  
-  
-  <!-- los vengadores -->
-  
-  <div class="vengadores_container">
-    <div class="bg">
-      <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="986" viewBox="0 0 1280 986" fill="none">
-        <path d="M0 91L1282 0V986L0 863V91Z" fill="black"/>
-      </svg>
+
+      <h1 class="h1"> Los vengadores acompañando tu aventura </h1>
+
+      <div class="vengadores_parallax" id="parallaxBg">
+
+        <div class="paralax-bg">
+          <div class="absolute">
+            <img src="./assets/fondoNubes.png" class="w-100 h-100" alt="">
+          </div>
+          <div class="absolute">
+            <img src="./assets/plantas2.png" class="w-100 h-100" alt="">
+          </div>
+          <div class="absolute plantas">
+            <img src="./assets/plantas.png" class="w-100 h-100" alt="">
+          </div>
+        </div>
+
+        <div class="personajes_paralax" id="personajesParallax">
+          <div class="elastic absolute">
+            <img src="./assets/elasticgirl.png" class="w-100 h-100" alt="">
+          </div>
+          <div class="pantera absolute">
+            <img src="./assets/Pantera.png" class="w-100 h-100" alt="">
+          </div>
+          <div class="hulk absolute">
+            <img src="./assets/Hulk.png" class="w-100 h-100" alt="">
+          </div>
+        </div>
+
+      </div>
+
     </div>
-    <h1 class="h1"> Los vengadores acompañando tu aventura  </h1>
-    <div class="vengadores_parallax ">
 
-      <div class="paralax-bg">
-        <div class="absolute">
-          <img src="./assets/fondoNubes.png" class="w-100 h-100"  alt="">
-        </div>
-        <div class="absolute">
-          <img src="./assets/plantas2.png" class="w-100 h-100" alt="">
-        </div>
-        <div class="absolute plantas"> 
-          <img src="./assets/plantas.png" class="w-100 h-100" alt="">
-        </div>
-      </div>
+    <!-- los vengadores -->
 
-      <div class="personajes_paralax">
-        <div class="elastic absolute">
-          <img src="./assets/elasticgirl.png"  class="w-100 h-100" alt="">
-        </div>
-        <div class="pantera absolute">
-          <img src="./assets/Pantera.png" class="w-100 h-100" alt="">
-        </div>
-        <div class="hulk absolute">
-          <img src="./assets/Hulk.png" class="w-100 h-100" alt="">
-        </div>
-      </div>
 
-    </div>
-  </div>
-  
-<!-- los vengadores -->
+    <!-- mas diversion -->
 
-<!-- mas diversion -->
-
-  <div class="diversion_container">
-    <h1 class="h1">Mas amigos, mas diversión!</h1>
-    <ul class="flex">
-      <div class="img_container">
-        <img src="" alt="" class="w-100 h-100" id="img_sticky">
-      </div>
-      <ul class="text_container">
-        <li>
-          <h2 class="h2">Mas de 100 misiones para que juegues sin parar!</h2>
-          <p class="p">Tus padres, contentos. Explora el emocionante mundo de Spider-Man con más de 100 misiones que te mantendrán
-            en
-            constante acción y adrenalina. Enfréntate a desafíos únicos, desentraña misterios, y ayuda a Spider-Man a mantener la
-            paz en la ciudad mientras te sumerges en la piel del héroe arácnido. ¿Tienes lo que se necesita para superar todas las
-            misiones y convertirte en el auténtico Spider-Man?</p>
+    <div class="diversion_container">
+      <h1 class="h1">Mas amigos, mas diversión!</h1>
+      <ul class="flex">
+        <div class="img_container">
+          <img src="" alt="" class="w-100 h-100" id="img_sticky">
+        </div>
+        <ul class="text_container">
+          <li>
+            <h2 class="h2">Mas de 100 misiones para que juegues sin parar!</h2>
+            <p class="p">Tus padres, contentos. Explora el emocionante mundo de Spider-Man con más de 100 misiones que
+              te mantendrán
+              en
+              constante acción y adrenalina. Enfréntate a desafíos únicos, desentraña misterios, y ayuda a Spider-Man a
+              mantener la
+              paz en la ciudad mientras te sumerges en la piel del héroe arácnido. ¿Tienes lo que se necesita para
+              superar todas las
+              misiones y convertirte en el auténtico Spider-Man?</p>
           </li>
           <li>
             <h2 class="h2">Escenas deslumbrantes que te sorprenderán</h2>
-            <p class="p">Sumérgete en un universo de maravillas visuales con 'Spider-Man: [nombre del juego]'. Nuestro juego te
-              llevará a través de escenas deslumbrantes que te dejarán sin aliento. Desde los rascacielos de Nueva York hasta los
-              intrincados detalles de la vida de Peter Parker, cada rincón de este mundo te sorprenderá. Prepárate para una
-              experiencia única que desafiará tus expectativas y te transportará a un asombroso viaje con el Hombre Araña.</p>
+            <p class="p">Sumérgete en un universo de maravillas visuales con 'Spider-Man: [nombre del juego]'. Nuestro
+              juego te
+              llevará a través de escenas deslumbrantes que te dejarán sin aliento. Desde los rascacielos de Nueva York
+              hasta los
+              intrincados detalles de la vida de Peter Parker, cada rincón de este mundo te sorprenderá. Prepárate para
+              una
+              experiencia única que desafiará tus expectativas y te transportará a un asombroso viaje con el Hombre
+              Araña.</p>
           </li>
           <li>
             <h2 class="h2">Cada misión te dará puntos que no sirven para nada! </h2>
-            <p class="p">Cada misión es una oportunidad para vivir la emocionante vida del Hombre Araña, y aunque los puntos que
+            <p class="p">Cada misión es una oportunidad para vivir la emocionante vida del Hombre Araña, y aunque los
+              puntos que
               ganarás no tengan un propósito específico, la verdadera recompensa está en la diversión y la inmersión que
-              experimentarás en cada desafío. No necesitas acumular puntos para sentirte como un auténtico superhéroe, ya que la
-              adrenalina de salvar la ciudad y la emoción de las acrobacias en el aire son más que suficientes. ¡Así que prepárate
-              para sumergirte en la acción y la aventura, sin preocuparte por los puntos, y vive la experiencia definitiva de
+              experimentarás en cada desafío. No necesitas acumular puntos para sentirte como un auténtico superhéroe,
+              ya que la
+              adrenalina de salvar la ciudad y la emoción de las acrobacias en el aire son más que suficientes. ¡Así que
+              prepárate
+              para sumergirte en la acción y la aventura, sin preocuparte por los puntos, y vive la experiencia
+              definitiva de
               Spider-Man!</p>
           </li>
           <li>
             <h2 class="h2">Derrota a los villanos y diviértete</h2>
-            <p class="p">la diversión está asegurada mientras te enfrentas a los infames villanos de la ciudad de Nueva York.
-              Enfréntate a desafíos épicos, combate a tus enemigos más temibles y disfruta de una experiencia llena de acción y
+            <p class="p">la diversión está asegurada mientras te enfrentas a los infames villanos de la ciudad de Nueva
+              York.
+              Enfréntate a desafíos épicos, combate a tus enemigos más temibles y disfruta de una experiencia llena de
+              acción y
               emoción. Cada encuentro con los villanos te sumergirá en una batalla trepidante y te llevará más cerca de
-              convertirte en el auténtico Hombre Araña. Así que, ¿estás listo para derrotar a los villanos y sumergirte en la
+              convertirte en el auténtico Hombre Araña. Así que, ¿estás listo para derrotar a los villanos y sumergirte
+              en la
               aventura definitiva de Spider-Man?"</p>
           </li>
-          </ul>
+        </ul>
     </div>
-  </div>
 
-
-<!-- mas diversion -->
+    <!-- mas diversion -->
 
 
 
 
-<!-- gran poder -->
+    <!-- gran poder -->
 
-  <div class="poder_container">
-    <div class="bg absolute">
-      <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="477" viewBox="0 0 1280 477" fill="none">
-        <path d="M0 0L1280 96V344L0 476.454V0Z" fill="black"/>
+    <div class="poder_container">
+      <div class="bg absolute">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="477" viewBox="0 0 1280 477" fill="none">
+          <path d="M0 0L1280 96V344L0 476.454V0Z" fill="black" />
         </svg>
-    </div>
+      </div>
 
 
-    <div class="poder_body">
-      <h1 class="h1">”un gran poder conlleva una gran responsabilidad”</h1>
+      <div class="poder_body">
+        <h1 class="h1">”un gran poder conlleva una gran responsabilidad”</h1>
         <button class="button elevacion-2">COMPRAR AHORA</button>
-      
+
+      </div>
     </div>
-  </div>
 
-<!-- gran poder -->
+    <!-- gran poder -->
 
 
-<!-- personajes caracteres -->
+    <!-- tres spiders -->
 
-<ul class="pj_caracter">
-  <div class="bg">
-    <div class="barra absolute top"></div>
-    <div class="barra absolute bottom"></div>
-  </div>
-  <li>
-    <div class="spiderwoman absolute">
-      <img src="./assets/spiderw-pj.png" alt="">
+    <div id="tresspiders">
+      <img src="./assets/3spidersFondo.svg" id="fondo-tres-spiders">
+      <img src="./assets/spiderw-pj.png" class="tres-spider" id="tres-spiders-gwen">
+      <img src="./assets/spiderman-pj.png" class="tres-spider" id="tres-spiders-peter">
+      <img src="./assets/spiderblack-pj.png" class="tres-spider" id="tres-spiders-miles">
     </div>
-  </li>
-  
-  <li>
-    <div class="spiderman absolute">
-      <img src="./assets/spiderman-pj.png" alt="">
-    </div>
-  </li>
-  
-  <li>
-    <div class="spiderblack absolute">
-      <img src="./assets/spiderblack-pj.png" alt="">
-    </div>
-  </li>
-</ul>
 
-<!-- personajes caracteres -->
+    <!-- tres spiders -->
 
 
 
-<!-- contact -->
+    <!-- contact -->
     <div class="bg-container-contact">
 
       <!-- input -->
@@ -369,7 +381,7 @@
       <img class="redes" src="./assets/redes.png">
     </div>
 
-    <!-- layout -->
-  </di>
+  </div>
+  <!-- layout -->
   <script src="js/javascript.js"></script>
 </body>
