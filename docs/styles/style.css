@@ -1,0 +1,872 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+.layout {
+  width: 1280px;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+/* HEADER */
+
+header {
+  position: sticky;
+  width: 1280px;
+  top: 0;
+  height: 103px;
+  z-index: 10000;
+  background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);
+}
+
+header ul {
+  position: relative;
+  top: -8px;
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px auto;
+  position: relative;
+}
+
+header .button {
+  border: 8px solid var(--color-Primario);
+  background: var(--color-Secundario);
+  border-radius: 111px;
+  width: 212px;
+  cursor: pointer;
+  height: 62px;
+  font-size: 20px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--color-primario-S);
+  color: var(--color-primario-S);
+  font-size: 19px;
+  font-family: var(--fuente);
+}
+
+header .img {
+  width: 590px;
+  position: absolute;
+  top: 60px;
+  left: calc(227px);
+  transition: .5s ease-in;
+  z-index: 5;
+}
+
+header img {
+  position: relative;
+  width: 100%;
+}
+
+header button {
+  width: 200px;
+  height: 50px;
+}
+
+header.scrolleando .img {
+  width: 133px;
+  top: 0px;
+  left: calc(574px - 100px);
+  transition: .5s ease-in;
+}
+
+header.scrolleando {
+  position: sticky;
+}
+
+/* HEADER */
+
+/* CONSIGNA 2 */
+
+.btn_menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.btn_menu .linea {
+  height: 12px;
+  width: 42px;
+  background-color: #FFE901;
+  border: 4px solid #2981FF;
+  border-radius: 10px;
+  filter: drop-shadow(4px 5px 0px #02187E);
+  transition: all 0.5s;
+}
+
+@keyframes line1Animation {
+  to {
+    background-color: #FFE901;
+    border: 4px solid #2981FF;
+    transform: translateY(5px) translateX(1px) rotate(-40deg);
+    filter: none;
+    width: 50px;
+  }
+}
+
+@keyframes line3Animation {
+  to {
+    background-color: #FFE901;
+    border: 4px solid #2981FF;
+    transform: translateY(-7px) rotate(40deg);
+    filter: none;
+    width: 50px;
+
+  }
+}
+
+.btn_menu.clicked .linea:nth-child(1) {
+  animation: line1Animation .5s forwards;
+}
+
+.btn_menu.clicked .linea:nth-child(2) {
+  display: none;
+}
+
+.btn_menu.clicked .linea:nth-child(3) {
+  animation: line3Animation .5s forwards;
+}
+
+/* CONSIGNA 3 */
+nav .btn_menu {
+  font-size: 1.2em;
+  display: none;
+  position: fixed;
+  left: 410px;
+  top: 90px;
+  background-color: var(--color-primario-L);
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 0;
+  z-index: 999999;
+}
+
+nav .btn_menu a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+nav .btn_menu a:hover {
+  background-color: var(--color-primario-S);
+  border-radius: 10px;
+  scale: 1.1;
+}
+
+/* Edificios Paralax */
+.presentacion {
+  position: relative;
+  top: 90px;
+  width: 1280px;
+}
+
+.parallax-edificios {
+  position: relative;
+  top: -103px;
+  height: calc(846px - 50px);
+}
+
+
+.cielo {
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  object-fit: cover;
+}
+
+
+.edificios {
+  position: absolute;
+  width: 100%;
+  height: 720px;
+}
+
+.edificios .izquierda {
+  left: -50px;
+  width: 452px;
+  height: 720px;
+  top: 40px;
+}
+
+.edificios .medio {
+  width: 543.5px;
+  height: 213.5px;
+}
+
+.edificios .derecha {
+  width: 374px;
+  height: 727.5px;
+  right: -5px;
+  top: 40px;
+}
+
+.showEdificios {
+  /*muestra los edificios con una animacion*/
+  transform: translateY(0px);
+  opacity: 1;
+  filter: blur(0);
+}
+
+/* hombres aranias */
+
+.spidermans {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: auto;
+  width: 1280px;
+  height: 200px;
+  z-index: 12;
+}
+
+.spiderwoman {
+  left: 90px;
+  top: 262px;
+  width: 360px;
+}
+
+.spiderman {
+  left: 403px;
+  top: 277px;
+  width: 465px;
+}
+
+
+.spiderblack {
+  left: 695px;
+  top: 209px
+}
+
+.spiderblack .img-container {
+  width: 393px;
+}
+
+.telaarania {
+  top: -5px;
+  left: -403px;
+  width: 550.8px;
+}
+
+.telarania2 {
+  left: 285px;
+  top: 50px;
+  width: 300px;
+}
+
+/* parallax spiderman */
+
+/* conocer duende verde */
+
+.seccion_conocer {
+  top: -150px;
+  position: relative;
+  z-index: 9;
+  color: #fff;
+}
+
+.conocer_container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: calc(100% - 100px);
+  margin-left: 100px;
+}
+
+.conocer_container .h1 {
+  margin-top: 219.5px;
+  width: 646px;
+}
+
+.conocer_container .p {
+  height: 154px;
+  width: 586px;
+  margin-top: 22px;
+}
+
+.conocer_img {
+  margin-top: 14px;
+  height: 413.131px;
+  transform: rotate(-2.222deg);
+  width: 751px;
+  border-radius: 26px;
+  border: 9px solid #FFF;
+  box-shadow: 3px 6px 8px 4px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  ;
+}
+
+.conocer_img img {
+  object-fit: cover;
+}
+
+.duende_container {
+  position: absolute;
+  width: 550px;
+  height: 920px;
+  z-index: 10;
+  top: 132.5px;
+  right: 15px;
+  transform: rotateY(180deg);
+}
+
+
+/* conocer duende */
+
+/* amigos */
+
+.seccion_amigos {
+  display: flex;
+  align-items: center;
+  width: 1280px;
+  margin-top: 60px;
+  margin-bottom: 160px;
+  justify-content: space-around;
+  align-items: baseline;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: opacity 1.5s ease-out, transform 3s ease-out;
+}
+
+.seccion_amigos .item {
+  width: 350px;
+}
+
+.seccion_amigos li {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: all .5s ease-in-out;
+}
+
+.seccion_amigos li:nth-child(2) {
+  transition-delay: 1s;
+}
+
+.seccion_amigos li:nth-child(3) {
+  transition-delay: 2s;
+}
+
+.seccion_amigos .p {
+  margin-top: 12px;
+}
+
+.seccion_amigos.in-viewport {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.seccion_amigos.in-viewport li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* amigos */
+
+/* ghostSpider */
+.ghostspider {
+  position: relative;
+  background-image: url(../assets/ghostSpider.png);
+  width: 100%;
+  height: 566px;
+}
+
+.ghostspider {
+  position: relative;
+  z-index: 150;
+}
+
+.ghostspider .juego1 {
+  width: 546.108px;
+  height: 326.509px;
+  top: -109.45px;
+  left: 77.81px;
+}
+
+.ghostspider .juego2 {
+  width: 543.218px;
+  height: 325.787px;
+  top: 84.03px;
+  left: 79.01px;
+}
+
+.ghostspider .juego3 {
+  width: 546.108px;
+  height: 326.509px;
+  top: 298.38px;
+  left: 101px;
+}
+
+.vengadores_parallax {
+  position: relative;
+  margin: auto;
+  width: 1077.059px;
+  height: 527.626px;
+}
+
+/* ghostSpider */
+
+.ghostspider {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  transition: transform .6s ease-in-out;
+}
+
+
+
+/* vengadores */
+
+.vengadores_container {
+  width: 1280px;
+  height: 986px;
+  position: relative;
+  top: -92px;
+  color: #FFF;
+}
+
+.vengadores_container .bg {
+  position: absolute;
+}
+
+.vengadores_container .h1 {
+  position: absolute;
+  margin: calc(163px + 92px) 104px 51px;
+  font-weight: 500;
+  width: 667px;
+  z-index: 100;
+}
+
+.vengadores_parallax {
+  position: absolute;
+  top: calc(389px + 91px);
+  box-shadow: 26px 29px 41px 14px rgba(0, 0, 0, 0.15);
+  left: 101px;
+}
+
+.vengadores_parallax .plantas {
+  z-index: 200;
+}
+
+.personajes_paralax .elastic {
+  width: 451.258px;
+  height: 591.442px;
+  top: -53px;
+  left: 84.4px;
+  transform: rotate(-12.483deg);
+
+}
+
+.personajes_paralax .pantera {
+  top: -219px;
+  left: 510px;
+  width: 400px;
+  height: 552px;
+  object-fit: cover;
+}
+
+.hulk {
+  width: 410.106px;
+  height: 437.972px;
+  top: 0130.18px;
+  left: 697.12px;
+  transform: rotate(7.515deg);
+  flex-shrink: 0;
+}
+
+/* vengadores */
+
+/* mas diversion */
+.diversion_container {
+  position: relative;
+  margin: auto;
+  width: 1080px;
+  margin-bottom: 200px;
+}
+
+.diversion_container h1 {
+  margin-bottom: 69px;
+}
+
+.diversion_container .flex {
+  position: relative;
+  justify-content: space-between;
+}
+
+.diversion_container .img_container {
+  position: sticky;
+  top: 169px;
+  width: 552px;
+  height: 302.762px;
+  transition: all 1s ease-in-out;
+}
+
+.diversion_container .text_container {
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  width: 467px;
+}
+
+@keyframes stickyOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes stickyIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animationStickyOut {
+  animation: stickyOut 0.3s ease-out;
+  opacity: 0;
+}
+
+.animationStickyIn {
+  animation: stickyIn 0.3s ease-in;
+}
+
+/* mas diversion */
+
+/* gran poder */
+
+.poder_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 248px;
+  color: #fff;
+  margin-bottom: -20px;
+}
+
+
+.poder_body .h1 {
+  position: relative;
+  width: 816px;
+  margin: 15px 104px 42px;
+  font-weight: 400;
+  color: #FFF;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+
+.poder_body button {
+  padding: 15px 44px;
+  position: relative;
+  border-radius: 111px;
+  border: 8px solid var(--2982-ff, #2982FF);
+  background: #FFE901;
+  color: #02187E;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 94.5%;
+  /* 18.9px */
+  -webkit-text-stroke: 1px var(--color-primario-S);
+  margin-left: 104px;
+}
+
+/* gran poder */
+
+/* tres spiders */
+
+.tres-spider {
+  filter: blur(0);
+  transition: transform .5s ease-in-out;
+}
+
+.borroso {
+  filter: blur(5px);
+  /* Aplica el desenfoque */
+}
+
+.agrandar {
+  transform: scale(1.2);
+  /* Aumenta el tamaño */
+}
+
+#tres-spiders-fondo1 {
+  top: 6275px;
+  width: 1280px;
+  height: 841px;
+  flex-shrink: 0;
+  background-image: url("./assets/prueba3.png");
+  z-index: 2;
+}
+
+#fondo-tres-spiders {
+  width: 1280px;
+  height: 719px;
+}
+
+#tres-spiders-gwen {
+  top: 6446px;
+  left: 30vw;
+  position: absolute;
+  width: 268px;
+  height: 416.5px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+#tres-spiders-peter {
+  top: 6455px;
+  left: 40vw;
+  position: absolute;
+  width: 416.5px;
+  height: 457.5px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+#tres-spiders-miles {
+  top: 6455px;
+  left: 60vw;
+  position: absolute;
+  width: 313.5px;
+  height: 398.5px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+/* tres spiders */
+
+
+/* input */
+
+.bg-container-contact {
+  position: relative;
+  height: 1280px;
+  background: linear-gradient(to top, #F7E3D8 21.2%, #8FBEFC 81.48%);
+  display: flex;
+  justify-content: center;
+  padding-top: 152px;
+}
+
+.bg-container-contact h1 {
+  display: block;
+  color: #000;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 94.5%;
+  width: 816px;
+}
+
+.seccion-form p {
+  width: 578px;
+  height: 95px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 94.5%;
+  margin-left: 52px;
+}
+
+form {
+  margin-bottom: 39px;
+  margin-top: 46px;
+}
+
+form input::placeholder {
+  color: rgba(0, 0, 0, 0.253);
+}
+
+form input {
+  width: 562px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 50px 0px 0px 50px;
+  border-top: 9px solid var(--color-Primario);
+  border-bottom: 9px solid var(--color-Primario);
+  border-left: 9px solid var(--color-Primario);
+  background: #fff;
+  box-shadow: 4px 5px 0px 0px var(--color-primario-S);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 94.5%;
+  padding: 41px 51px;
+  letter-spacing: 2.2px;
+}
+
+
+
+
+form button {
+  width: 218px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 0px 50px 50px 0px;
+  border: 9px solid var(--color-Primario);
+  background: #ffe901;
+  box-shadow: 4px 5px 0px 0px var(--color-primario-S);
+  color: var(--color-primario-S);
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 94.5%;
+  letter-spacing: 2.2px;
+  -webkit-text-stroke: 2.5px var(--color-primario-S);
+}
+
+.cartel {
+  width: 231px;
+  margin-left: 52px;
+  margin-top: 17px;
+}
+
+/* input */
+
+/* spritesheet */
+
+.spritesheet {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1280px;
+  height: 720px;
+  margin: auto;
+}
+
+.spritesheet .bg {
+  width: 100%;
+  height: 720px;
+}
+
+.spider1 {
+  width: 94px;
+  height: 88px;
+  top: 393px;
+  left: 998px;
+}
+
+.spider-sprite {
+  width: 58px;
+  height: 64px;
+  top: 496px;
+  left: 533px;
+}
+
+.venom {
+  width: 97px;
+  height: 89px;
+  top: 560px;
+  left: 219px;
+}
+
+/* spritesheet */
+
+/* consolas */
+
+.consolas {
+  width: 100%;
+  height: 80px;
+  background: #242424;
+  overflow: hidden;
+}
+
+
+/* footer */
+
+.footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 598px;
+  flex-shrink: 0;
+  padding: 0 100px;
+  background-color: #5e5e5d;
+}
+
+.footer p {
+  width: 820px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 94.5%;
+  margin: 38px 0;
+  letter-spacing: 2.2px;
+}
+
+.redes {
+  width: 212px;
+  height: 41px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.loader_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 25000;
+  display: flex;
+  flex-direction: column;
+}
+
+.loader {
+  width: 80px;
+  height: 90px;
+  animation: spin 1s steps(10) infinite, desplazar 5s infinite linear;
+  background-image: url(../assets/spritesheet\ 1.png);
+}
+
+.loader_container .barra{
+  width: 200px;
+  height: 30px;
+  background: red;
+}
+
+@keyframes desplazar {
+  from {
+    transform: translateX(-100px);
+  }
+
+  to {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes spin {
+  to {
+    background-position: -800px;
+  }
+}
