@@ -630,7 +630,7 @@ nav .btn_menu a:hover {
 
 #tres-spiders-gwen {
   top: 6446px;
-  left: 190px;
+  left: 30vw;
   position: absolute;
   width: 268px;
   height: 416.5px;
@@ -640,7 +640,7 @@ nav .btn_menu a:hover {
 
 #tres-spiders-peter {
   top: 6455px;
-  left: 394px;
+  left: 40vw;
   position: absolute;
   width: 416.5px;
   height: 457.5px;
@@ -650,7 +650,7 @@ nav .btn_menu a:hover {
 
 #tres-spiders-miles {
   top: 6455px;
-  left: 777px;
+  left: 60vw;
   position: absolute;
   width: 313.5px;
   height: 398.5px;
@@ -658,57 +658,10 @@ nav .btn_menu a:hover {
   z-index: 2;
 }
 
-/* .pj_caracter {
-  position: relative;
-  height: 720px;
-  margin-bottom: 123px;
-  filter: blur(0);
-  transition: transform 0.4s ease-in-out;
-}
-
-.pj_caracter .bg {
-  position: absolute;
-  width: 1280px;
-  height: 841.639px;
-  background: #5e5e5d;
-  opacity: 0.1;
-  transform-origin: 0% 100%
-}
-
-.pj_caracter .spiderwoman {
-  top: 171px;
-  left: 190px;
-  width: 268px;
-  height: 416.5px;
-}
-
-.pj_caracter .spiderman {
-  top: 180px;
-  left: 394px;
-  width: 416.5px;
-  height: 457.5px;
-}
-
-.pj_caracter .spiderblack {
-  top: 180px;
-  left: 777px;
-  width: 313.5px;
-  height: 398.5px;
-}
-
-.borroso {
-  filter: blur(5px);
-}
-
-.agrandar {
-  transform: scale(1.2);
-} */
-
-
 /* tres spiders */
 
-/* input */
 
+/* input */
 
 .bg-container-contact {
   position: relative;
