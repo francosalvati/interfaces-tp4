@@ -27,10 +27,10 @@ let img;
 
 // Array de rutas de imágenes
 let images = [
-    '../assets/juego1.png',
-    '../assets/juego2.png',
-    '../assets/juego3.png',
-    '../assets/juego4.png',
+    '/assets/juego1.png',
+    '/assets/juego2.png',
+    '/assets/juego3.png',
+    '/assets/juego4.png',
 ];
 
 // Función que maneja el evento de desplazamiento

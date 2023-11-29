@@ -339,7 +339,7 @@ nav .btn_menu a:hover {
   align-items: baseline;
   opacity: 0;
   transform: translateY(200px);
-  transition: opacity 1.5s ease-out, transform 3s ease-out;
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
 .seccion_amigos .item {
