@@ -40,7 +40,7 @@ const scrollHandler = () => {
 
     // Utiliza requestAnimationFrame para optimizar el rendimiento
     requestAnimationFrame(() => {
-        console.log(scroll)
+
         // Determina qué imagen mostrar según el desplazamiento
         if (scroll < 4350 && img != 0) {
             img = 0;
