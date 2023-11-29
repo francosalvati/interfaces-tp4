@@ -602,6 +602,11 @@ nav .btn_menu a:hover {
 
 /* tres spiders */
 
+#tresspiders{
+  position: relative;
+  top: 0;
+}
+
 .tres-spider {
   filter: blur(0);
   transition: transform .5s ease-in-out;
@@ -632,8 +637,8 @@ nav .btn_menu a:hover {
 }
 
 #tres-spiders-gwen {
-  top: 6446px;
-  left: 30vw;
+  top: 180px;
+  left: 190px;
   position: absolute;
   width: 268px;
   height: 416.5px;
@@ -642,8 +647,8 @@ nav .btn_menu a:hover {
 }
 
 #tres-spiders-peter {
-  top: 6455px;
-  left: 40vw;
+  top: 180px;
+  left: 394px;
   position: absolute;
   width: 416.5px;
   height: 457.5px;
@@ -652,8 +657,8 @@ nav .btn_menu a:hover {
 }
 
 #tres-spiders-miles {
-  top: 6455px;
-  left: 60vw;
+  top: 180px;
+  left: 777px;
   position: absolute;
   width: 313.5px;
   height: 398.5px;
